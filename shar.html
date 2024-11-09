@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <style>
+        body, html {
+            margin: 10;
+            padding: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            height: 100%;
+            color: #333;
+            background-image: url("Free.webp");
+            background-size: cover;
+        }
+        header {
+            color: white;
+            padding: 40px;
+            text-align: center;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            animation: glow is ease-in-out infinite alternate;
+            font-size: 30px;
+        }
+        .glow {
+            font-size: 60px;
+            color: #fff;
+             text-align: center;
+             animation: glow 1s ease-in-out infinite alternate;
+        }
+
+        @-webkit-keyframes glow {
+              from {
+              text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #72eded, 0 0 40px #00dee6, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+                 }
+  
+             to {
+             text-shadow: 0 0 20px #fff, 0 0 30px #f3ff4d, 0 0 40px #faf360, 0 0 50px #f7f45f, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+                 }
+        }
+        .nav {
+            margin-top: 20px;
+        }
+        .nav a:hover {
+            color: #f39c12;
+        }
+        .row {
+            display: flex;
+        }
+
+        /* Create three equal columns that sits next to each other */
+        .column {
+            flex: 33.33%;
+            padding: 5px;
+        }
+        .about {
+            padding: 40px;
+            height: 80%;
+        }
+ 
+        * {
+            box-sizing: border-box;
+        }
+
+        .row {
+            display: flex;
+            padding: 1%;
+        }
+
+        /* Create three equal columns that sits next to each other */
+        .column {
+            flex: 33.33%;
+            padding: 10px;
+            margin: 10PX;
+            color:#2b1616
+        }
+        .projects {
+            padding: 10px;
+            height: 40%;
+        }
+ 
+        * {
+            box-sizing: border-box;
+        }
+
+        .row {
+            display: flex;
+            padding: 1%;
+        }
+
+        /* Create three equal columns that sits next to each other */
+        .column {
+            flex: 33.33%;
+            padding: 10px;
+            margin: 10PX;
+            color:#2b1616
+        }
+        .skills {
+            color: #f6f0f0;
+            padding: 60px;
+            text-align: center;
+            height:40%
+            
+        }
+        .skills li {
+            color: #111;
+
+        }
+        .resume-section {
+            color: #2f0e0e;
+            padding: 5px;
+            text-align: center;
+            height:40%
+        }    
+        .resume-section a {
+            padding: 15px 30px;
+            background-color: #27ae60;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 1.2em;
+        }
+        .resume-section a:hover {
+            background-color: #e9c2f1;
+        }
+        .footer {
+            text-align: center;
+            padding: 20px 0;
+            background-color: #2c3e50;
+            color: rgb(7, 1, 1);
+            font-size: 0.9em;
+        }
+        .footer a {
+            color: #f39c12;
+            text-decoration: none;
+        }
+        .contact {
+            padding: 10px;
+            height: 40%;
+        }
+    </style>
+</head>
+    <body>
+        <h1 class="glow"> Medisetti Sharmila </h1>
+        
+        <header>
+          
+            <div class="nav">
+                <a href="#about">About</a>
+                <a href="#skills">skills</a>
+                <a href="#projects">Projects</a>
+                <a href="resume">Resume</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </header>
+        <section class="about">
+            <div class="row">
+               <!-- Title and Text -->
+               <div class="column">
+                <h1>About Me</h1><br>
+                    <p>I'm Medisetti Sharmila Enthusiastic and detail-oriented BTech CSE final year student in SPMVV with a strong foundation in software
+                        engineering principles and programming language such as Java, SQL, HTML, CSS and Javascrip. Eager to leverage acedemic training in a practical setting as an
+                        entrylevel Software Engineer and gain hands-on experience in software engineering. Adept at problem-solving and conducted peer programming sessions, improving
+                        team collaboration by 30% and accelerating project completion times by 20%, while adhering to software engineering principles during final year. 
+                              As a web developer enthusiast, I have bee honing my skills in both front-end and back-end technologies,always striving to create clean, efficient and user friendly
+                                   web applications.
+                                I'm constantly exploring new techniques and staying up-to-date with the latest 
+                                    trends in the tech world. 
+                    </p>
+                </div>    
+            <!-- Image -->
+                <div class="column">
+                    <img src="prof.jpg" alt="Snow" style="width:80%;border-radius: 50%;">
+                </div>
+            </div>    
+        </section>
+        <section class="projects">
+            <div class="row">
+                <!-- Title and Text -->
+                <div class="column">
+                    <img src="pro.webp" alt="Snow" style="width:90%;border-radius: 50%;height: 90%;">
+                </div>
+                <div class="column">
+                    <h3>Project one</h3>
+                    <p>I successfully completed my first project in Python full stack
+                        at ExcelR.This project involved building a complete web application
+                        using python as the core back-end technology, integrating it with 
+                        front-end frameworks and databases. Through this project, I gained
+                        hands-on experience in designing, developing, and deploying full-stack applications.
+                        The project challenged me to apply my skills in various aspects, including 
+                        API integration, database management, and front-end development, while ensuring
+                         performance optimization and seamless user experiences. It was a crutial milestone
+                         that boosted my confidence in handling real-world web development scenarios.
+                    </p>
+                    <p>Others</p>
+                    <a href="EXCELR-74212-Medisetti Sharmila.pdf" target="_blank">Click Here</a><br>
+                    <a href="accen.pdf" target="_blank">Click Here</a><br>
+                    <a href="accent.pdf" target="_blank">Click Here</a><br>
+                    <a href="edx.pdf" target="_blank">Click Here</a>
+                    
+                 </div>    
+                </div> 
+            <!-- Call-to-Action Button -->
+           
+        </section>
+        <section>
+            <div class="skills"></div>
+                <h1>skills</h1>
+                <div class="row">
+                    <div class="col-md-3">
+                        <h5>technical skills</h5>
+                        <ul>
+                            <li><a href="#">PYTHON</a></li>
+                            <li><a href="#">SQL</a></li>
+                            <li><a href="#">HTML&CSS</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3">
+                        <h5>technical skills</h5>
+                        <ul>
+                            <li><a href="#">C/C++</a></li>
+                            <li><a href="#">vfx</a></li>
+                            <li><a href="#">Data Analysis</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3">
+                        <h5>soft skills</h5>
+                        <ul>
+                            <li><a href="#">active listner</a></li>
+                            <li><a href="#">creative</a></li>
+                            <li><a href="#">hard working</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3">
+                        <h5>soft skills</h5>
+                        <ul>
+                            <li><a href="#">time management</a></li>
+                            <li><a href="#">leadership</a></li>
+                        </ul>
+                    </div>
+                    <div class="column">
+                        <img src="girl.avif" alt="Snow" style="width:50%;border-radius: 50%;height: 70%;">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="resume-section">
+                <h1>Resume</h1>
+                <a href="Medisetti_Resume.pdf" target="_blank">Download Resume</a>
+            </div>
+        </section>
+        <section>
+            <div class="contact">
+                <h2>Contact Me</h2>
+                <p> If you'd like to Get
+                in touch with me, fell free to reach out via email at 
+                <a href="mail to: @gmail.com">sharmilamedisetti970@gmail.com</a>
+                </p>
+            </div>        
+        </section>
+        <footer>
+            &copy; Sharmila-medisetti |
+            <a href="https://github.com/Sharmila-git21">github</a>|
+            <a href="https://www.linkedin.com/in/sharmila-medisetti-311740268?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">
+            linkedin</a>
+            <div class="copyright">
+                &copy; All rights reserved.
+            </div>
+        </footer>
+        <script>
+            document.querySelectorAll('a[href^="#"]').forEach(anchor=>{
+                anchor.addEventListner('click',function(e));
+                {
+                    e.preventDefault();
+                    document.querySelector(this.getAttribute('href')).scrollIntoView({
+                        behaviour:'smooth'
+                    })
+                }
+            })
+            const TypewriterText="Welcome to My Portfolio!";
+            let i=0;
+            function typewriter(){
+                if(i<typewriterText.lenght){
+                    document.getElementById("typewriter").innerHTML+=TypewriterText.chatAt(i);
+                    i++;
+                    setTimeout(typeWriter,100);
+                }
+            }
+            window.onload=Typewriter;
+        </script>
+    </body>        
+</html>        
